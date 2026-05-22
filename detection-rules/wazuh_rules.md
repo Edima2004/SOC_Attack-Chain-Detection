@@ -1,3 +1,4 @@
+_All rules can be found in /var/ossec/etc/rules/local_rules.xml_
 SQL Injection Detection 
 ```xml
 <group name="web,sql_injection,attack">
