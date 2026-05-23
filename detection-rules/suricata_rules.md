@@ -20,3 +20,5 @@ NULL Scan Detection
 ```xml
 alert tcp any any -> $HOME_NET any ( msg:"NULL Scan Detected"; flags:0; flow:stateless; threshold:type both, track by_src, count 10, seconds 2; sid:1000201; rev:1;)
 ```
+---
+_The above rules should be placed in /etc/suricata/rules/local.rules_
