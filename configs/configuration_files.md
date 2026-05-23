@@ -1,6 +1,6 @@
 
 # Wazuh Server Configuration
-/var/ossec/etc/ossec.conf
+_configuration should be placed in /var/ossec/etc/ossec.conf_
 ```xml
   <localfile>
     <log_format>apache</log_format>
@@ -26,7 +26,7 @@
 ---
 
 # Wazuh Agent Configuration
-/var/ossec/etc/ossec.conf
+_configuration should be placed in /var/ossec/etc/ossec.conf_
 ```xml
   <localfile>
     <log_format>apache</log_format>
@@ -58,8 +58,8 @@
 ---
 
 # osquery Configuration
-/etc/osquery/osquery.conf
-```xml
+_configuration should be placed in /etc/osquery/osquery.conf_
+```json
 {
   "options": {
     "logger_plugin": "filesystem",
@@ -84,7 +84,7 @@
 ---
 
 # local decoder config
-/var/ossec/etc/decoders/local_decoder.xml
+_configuration should be placed in /var/ossec/etc/decoders/local_decoder.xml_
 ```xml
 <decoder name="scp-exfiltration">
     <prematch>^scp </prematch>
