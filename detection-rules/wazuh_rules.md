@@ -1,4 +1,4 @@
-_All rules can be found in /var/ossec/etc/rules/local_rules.xml_
+_All rules below should be placed in /var/ossec/etc/rules/local_rules.xml on the Wazuh Server(Kali)_
 SQL Injection Detection 
 ```xml
 <group name="web,sql_injection,attack">
