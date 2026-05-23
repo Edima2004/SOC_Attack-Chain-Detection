@@ -11,8 +11,7 @@ The objective of this lab was to build a practical SOC-focused detection environ
 * web exploitation attempts,
 * credential attacks,
 * authenticated access,
-* data exfiltration activity,
-* and defense evasion techniques.
+* and data exfiltration activity.
 
 ---
 
