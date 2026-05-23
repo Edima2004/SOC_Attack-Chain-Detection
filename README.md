@@ -202,7 +202,7 @@ Detection methods included:
 | -------------------------------------- | ----- |
 | Exfiltration Over Alternative Protocol | T1048 |
 
-_The scp data exfiltration rules implemented can be found in[exfiltration config](/configs/configuration_files.md)_
+_The scp data exfiltration rules implemented can be found in[exfiltration config](/detection-rules/wazuh_rules.md)_
 
 ---
 
