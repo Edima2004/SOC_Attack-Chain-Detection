@@ -1,4 +1,3 @@
-_All rules below should be placed in /var/ossec/etc/rules/local_rules.xml on the Wazuh Server(Kali)_
 SQL Injection Detection 
 ```xml
 <group name="web,sql_injection,attack">
@@ -68,3 +67,7 @@ Active Scanning Detection
   </rule>
 </group>
 ```
+---
+
+_All rules above should be placed in /var/ossec/etc/rules/local_rules.xml on the Wazuh Server(Kali)_ 
+
